@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>Html Css</title>
     <link rel="stylesheet" href="">
-    <script></script>
   </head>
 
   <body>
-    <div>
+    <div class="container">
+        <h2> Datalist simple </h2>
+
       <label for="fleur">Mes fleurs</label>
       <input list="fleurs" type="text" id="choix-fleurs">
       <datalist id="fleurs">
@@ -16,6 +17,42 @@
         <option> oranger </option>
         <option> tulipe </option>
       </datalist>
+      <h2> Datalist multiple </h2>
+      <p>
+          <label for="choix_bieres">Indiquez votre bière préférée :</label>
+          <input list="bieres" type="text" id="choix_bieres">
+        </p>
+        <p>
+          <label for="choix_bieres_ami">Indiquez le choix de votre ami :</label>
+          <input list="bieres" type="text" id="choix_bieres_ami">
+          <datalist id="bieres">
+            <option value="Meteor">
+            <option value="Pils">
+            <option value="Kronenbourg">
+            <option value="Grimbergen">
+          </datalist>
+        </p>
+
+<h2> Datalist multiple avec select ( pour les navigateur qui ne sont pas compatiblie avec la balise Datalist</h2>
+<label for="www">Adresse web</label>
+<input id="www" type="url" list="urldata" name="adresseweb">
+<datalist id="urldata">
+  <label for="adresse">ou sélectionner dans la liste</label>
+  <select name="adresse" id="adresse">
+    <option value="http://www.alsacreations.com/">http://www.alsacreations.com/</option>
+    <option value="http://www.bing.com/">http://www.bing.com/</option>
+    <option value="http://www.google.fr/">http://www.google.fr/</option>
+    <option value="http://www.yahoo.fr/">http://www.yahoo.fr/</option>
+  </select>
+</datalist>
+
+
+
     </div>
+
   </body>
+  <script>
+    
+  </script>
+
 </html>
