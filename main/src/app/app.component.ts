@@ -10,7 +10,7 @@ export class AppComponent {
   error: boolean;
   userValid: User = { name: 'burdy', password: 'goureige'};
   user: User = { name: '', password: ''};
- constructor( private storage:LocalStorageService ) {}
+ constructor( private storage: LocalStorageService ) {}
 
 
   public isSubmited (event: Event) {
@@ -23,6 +23,7 @@ export class AppComponent {
           this.storage.setItem(key, user[key]);
         }
       }
+      this.error = false;
     } else {
       this.error = true;
     }
