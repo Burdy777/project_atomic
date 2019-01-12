@@ -2,17 +2,20 @@
   <section class="title">
     <h1>Login</h1>
   </section>
-  <form (ngSubmit)="isSubmited($event)" #form="ngForm">
+  <form (ngSubmit)="isSubmited($event);" #form="ngForm">
     <div class="form-group">
       <label for="name"> Nom </label>
-      <input type="text" name="name" class="form-control" required [class.field_error]="name.invalid && name.dirty" #name="ngModel" [(ngModel)]="user.name">
-      <div class="alert alert-danger" [hidden]="name.valid || name.pristine"> Error : Please, fill this field with a correct name</div>
+      <input type="text" name="name" class="form-control" required [class.field_error]="name.invalid && name.dirty"
+        #name="ngModel" [(ngModel)]="user.name">
+      <div class="alert alert-danger" [hidden]="name.valid || name.pristine"> Error : Please, fill this field with a
+        correct name</div>
     </div>
     <div class="form-group">
       <label for="name"> Password </label>
       <input type="text" name="password" class="form-control" [ngClass]="{field_error: pass.invalid && pass.dirty }"
         [(ngModel)]="user.password" required #pass="ngModel">
-      <div [hidden]="pass.valid || pass.pristine" class="alert alert-danger">Error : Please, fill this field with a correct password</div>
+      <div [hidden]="pass.valid || pass.pristine" class="alert alert-danger">Error : Please, fill this field with a
+        correct password</div>
     </div>
 
     <button class="btn btn-default" [disabled]="form.invalid"> Login</button>
