@@ -10,7 +10,7 @@ constructor() { }
  * set Item In localStorage
  */
 public setItem(key: string, value: string) {
-  localStorage.setItem(name, value);
+  localStorage.setItem(key, value);
 }
 
 /**
@@ -23,7 +23,7 @@ public getItem(key: string): string {
 /**
  * get length propreties in localStorage
  */
-public getCount():number {
+public getCount(): number {
   return localStorage.length;
 }
 }

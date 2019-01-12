@@ -1,0 +1,12 @@
+.error {
+  color: red;
+  font-size: 1.2em;
+}
+
+.field_error{
+  border-left: 3px solid red;
+}
+
+.invalid_button {
+  color: blue;
+}
