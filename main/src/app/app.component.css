@@ -1,0 +1,17 @@
+nav.link {
+  display: flex;
+  justify-content: center;
+}
+nav.link span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 2em;
+}
+nav span a {
+  text-decoration: none;
+  color: black;
+}
+nav span a.active {
+  color: green;
+}
