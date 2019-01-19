@@ -10,6 +10,7 @@ export class CrisisListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
