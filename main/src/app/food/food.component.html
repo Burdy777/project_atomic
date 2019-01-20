@@ -1,0 +1,14 @@
+<form #form="ngForm" (ngSubmit)="submit(form.value)">
+  <section class="food">
+    <div class="container">
+      <input type="text" pInputText placeholder="restaurant" name="restaurant" [(ngModel)]="foods.restaurant">
+      <input type="text" pInputText placeholder="food" name="food" [(ngModel)]="foods.food">
+
+      <p-button styleClass="ui-button-success" label="Click"></p-button>
+
+    </div>
+
+  </section>
+
+</form>
+<app-not-found></app-not-found>

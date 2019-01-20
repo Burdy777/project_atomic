@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found-component.ts/not-found-component';
+import { FoodComponent } from './food/food.component';
 
 export const APP_ROUTES: Routes = [
-{path: 'food', component: AppComponent},
+{path: 'food', component: FoodComponent},
 {path: '', redirectTo: 'food', pathMatch: 'full'},
 {path: '**', component: NotFoundComponent },
 
